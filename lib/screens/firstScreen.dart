@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gdscquiz/screens/loginScreen.dart';
 import 'package:gdscquiz/screens/questionScreen1.dart';
 
 import '../constants.dart';
@@ -7,8 +8,9 @@ import '../constants.dart';
 class FirstScreen extends StatelessWidget {
   const FirstScreen({Key? key}) : super(key: key);
 
-  @override
   static const buttonColour = Colors.white;
+
+  @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kColour,
@@ -27,7 +29,7 @@ class FirstScreen extends StatelessWidget {
                 height: 30,
               ),
               const Text(
-                "Welcome to GDSC's \n      Tresure Hunt",
+                "Welcome to GDSC's \n      Treasure  Hunt",
                 style: TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 28,
@@ -37,8 +39,11 @@ class FirstScreen extends StatelessWidget {
                 height: 20,
               ),
               const Text(
-                "You can start Findind the tresure \n      by clicking on Start button",
-                style: TextStyle(fontSize: 22, fontWeight: FontWeight.w400, color: Colors.white60),
+                "You can start Findind the Treasure  \n      by clicking on Start button",
+                style: TextStyle(
+                    fontSize: 22,
+                    fontWeight: FontWeight.w400,
+                    color: Colors.white60),
               ),
               const SizedBox(
                 height: 80,
@@ -54,10 +59,9 @@ class FirstScreen extends StatelessWidget {
                       child: MaterialButton(
                         minWidth: MediaQuery.of(context).size.width,
                         onPressed: () {
-                          Navigator.push(
-                              context,
-                              CupertinoPageRoute(
-                                  builder: (context) => QuestionScreen()));
+                          Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(
+                                  builder: (context) => LoginScreen()));
                         },
                         child: const Text(
                           "Start -->",

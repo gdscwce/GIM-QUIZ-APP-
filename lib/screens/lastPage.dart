@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:confetti/confetti.dart';
 import 'package:gdscquiz/constants.dart';
 
+import '../functional/timer.dart';
+import 'appbar.dart';
+
 class LastPage extends StatefulWidget {
   const LastPage({Key? key}) : super(key: key);
 
@@ -28,6 +31,7 @@ class _LastPageState extends State<LastPage> {
     return Stack(alignment: Alignment.topCenter,
         children: [
       Scaffold(
+        appBar: CoustomAppBar(),
         backgroundColor: kColour,
         body: Padding(
           padding: const EdgeInsets.all(12.0),
@@ -35,11 +39,35 @@ class _LastPageState extends State<LastPage> {
             mainAxisAlignment: MainAxisAlignment.center,
 
             children: [
+
               Text("  Congratulations!!\n        You Did It" ,style: TextStyle(fontWeight: FontWeight.bold,fontSize: 40,color: Colors.white),),
+             SizedBox(height: 10,),
               Container(
                 padding: EdgeInsets.all(60),
                 child: Image.asset('assets/tresurefound.png'),
               ),
+
+             SizedBox(
+               height: 10,
+             ),
+              // ListView.builder(
+              //   itemCount: laps.length,
+              //   itemBuilder: ( context,  index) {
+              //     return Row(
+              //       children: [
+              //         Text("Level ${index+1} :",style: TextStyle(
+              //           color: Colors.white,
+              //           fontSize: 22
+              //         ),),
+              //         Text("${laps[index]}",style: TextStyle(
+              //             color: Colors.white,
+              //             fontSize: 22
+              //         ),),
+              //       ],
+              //     );
+              //   },
+              // ),
+              Text(kFirstName.toString()),
 
               Align(
                 alignment: Alignment.bottomRight,
