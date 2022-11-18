@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:gdscquiz/screens/displayScreen.dart';
 import 'package:gdscquiz/screens/loginScreen.dart';
-import 'package:gdscquiz/screens/questionScreen1.dart';
 
 import '../constants.dart';
 
@@ -13,62 +13,84 @@ class FirstScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: kColour,
       body: Padding(
         padding: const EdgeInsets.all(12.0),
         child: SingleChildScrollView(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
+
             children: [
-              Container(
-                height: 200,
-                width: 200,
-                child: Image.asset('assets/tresure.png'),
+
+              Padding(
+                padding: const EdgeInsets.only(top: 50),
+                child: Align(
+                  alignment: Alignment.topCenter,
+                  child: FittedBox(
+                    child: Container(
+                      width: 70,
+
+                      child: FittedBox(
+                        child: Image(
+                          image: AssetImage('assets/Component1.png'),
+                        ),
+                      ),
+                    ),
+                  ),
+                ),
               ),
               const SizedBox(
-                height: 30,
+                height: 120,
               ),
-              const Text(
-                "Welcome to GDSC's \n      Treasure  Hunt",
-                style: TextStyle(
-                    fontWeight: FontWeight.bold,
-                    fontSize: 28,
-                    color: Color(0xffffffff)),
+              Container(
+                child: Image.asset('assets/GDSC.png'),
+              ),
+              const SizedBox(
+                height: 40,
+              ),
+              FittedBox(
+                child:  Text(
+                  "presents",
+                  style: TextStyle(
+                      fontWeight: FontWeight.bold,
+                      fontSize: 17,
+                      color: Colors.black),
+                ),
               ),
               const SizedBox(
                 height: 20,
               ),
-              const Text(
-                "You can start Findind the Treasure  \n      by clicking on Start button",
-                style: TextStyle(
-                    fontSize: 22,
-                    fontWeight: FontWeight.w400,
-                    color: Colors.white60),
+              Container(
+                child: Image.asset('assets/Group 9.png'),
               ),
+
               const SizedBox(
                 height: 80,
               ),
               Align(
-                alignment: Alignment.bottomRight,
+                alignment: Alignment.bottomCenter,
                 child: Card(
-                  color: kColour,
+                  color: Colors.white,
                   child: Material(
                       elevation: 5,
-                      borderRadius: BorderRadius.circular(30),
-                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(15),
+                      color: Colors.blue,
                       child: MaterialButton(
-                        minWidth: MediaQuery.of(context).size.width,
+                        minWidth: MediaQuery.of(context).size.width/4,
                         onPressed: () {
-                          Navigator.of(context).pushReplacement(
-                              MaterialPageRoute(
+                          Navigator.pushReplacement(
+                              (context),
+                              CupertinoPageRoute(
                                   builder: (context) => LoginScreen()));
                         },
                         child: const Text(
-                          "Start -->",
+                          "Login",
                           textAlign: TextAlign.center,
                           style: TextStyle(
                               fontSize: 20,
-                              color: kColour,
+
                               fontWeight: FontWeight.bold),
                         ),
                       )),
