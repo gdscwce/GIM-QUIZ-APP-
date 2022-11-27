@@ -33,7 +33,7 @@ class _TeamAQuestionsState extends State<TeamAQuestions> {
         R1: 'Find the doors of the lab where you brew the potions',
         R2: 'Hermione was bored in the train, and randomly got curious about the length of the train. She knew that the train was running at 200 km/hr and She asked Ron to find out how long does it take to cross a certain pole that is in the way, and it came out to be 36 seconds.',
         R3: 'Inside an egg, my song sits waiting for you to hear it while you are bathing. Who am I?',
-        A: '1091011141090971051000130102000'),
+        A: '1091011141090971051002000'),
     QuestionStruct(
         l: 'LEVEL 3',
         R1: 'Eito(bricks) ka sharir aur do lakdi ke hath Har waqt sabko upar se dekhu aur hardam Rahu tumhare sath Awaj meri hai itni buland ki usse pura walchand chale Meri awaj me hai kuch aisa sukun ki lecture me baccho ko rahat mile Dundo muze hunga tumhare najdik hi',
@@ -45,7 +45,7 @@ class _TeamAQuestionsState extends State<TeamAQuestions> {
         R1: 'Sab kuch Banta he mitti se aur aakhir me mitti me mil jata he, Uss mitti koo dundo Jaha se chalu huaa khel Ek circle ke niche Sare milke pohocho uss jagah agar chahat he jit ki',
         R2: '',
         R3: '',
-        A: 'Alohomora')
+        A: 'ALOHOMORA')
   ];
 
   int questionNo = 0;
@@ -73,7 +73,7 @@ class _TeamAQuestionsState extends State<TeamAQuestions> {
     textInputAction: TextInputAction.none,
     decoration: const InputDecoration(
       contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-      hintText: "Find me",
+      hintText: "Enter Code",
     ),
   );
 

@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:gdscquiz/screens/team3Screens/WelcomeC.dart';
-import 'package:gdscquiz/screens/team3Screens/team3Question.dart';
 
 import '../../constants.dart';
 

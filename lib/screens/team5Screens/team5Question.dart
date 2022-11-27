@@ -15,7 +15,6 @@ class TeamEQuestions extends StatefulWidget {
 }
 
 class _TeamEQuestionsState extends State<TeamEQuestions> {
-  @override
   bool isTapped = false;
 
   String ans = "";
@@ -45,7 +44,7 @@ class _TeamEQuestionsState extends State<TeamEQuestions> {
         R1: 'Mubarako ab yeh hai akhari padhav\nCampus ke me beecho becch mere har taraf hai pathar ka chadav\n75 saalo se me dekhu sabko sabpe rehati hardam meri nazar\nMere se hai walchand Roshan mere bina sunna banjar\nVeena dhare hath mei swetha hai vastra mere aur khete hai mujhe bharati\nRoop mera hai itna tejasvi bilkul gagan me chadrama ke bhati\nKhajana ki koj hai badi mushkil mujhe jaldi doondo taki jeet kar ho jao tum safal\nAgar har gaya tum tho naraz na kyuki koshish karne vale kabhi nahi hote vifaal.',
         R2: '',
         R3: '',
-        A: 'Alohomora')
+        A: 'ALOHOMORA')
   ];
 
   int questionNo = 0;
@@ -73,7 +72,7 @@ class _TeamEQuestionsState extends State<TeamEQuestions> {
     textInputAction: TextInputAction.none,
     decoration: const InputDecoration(
       contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-      hintText: "Find me",
+      hintText: "Enter Code ",
     ),
   );
 
@@ -199,18 +198,20 @@ class _TeamEQuestionsState extends State<TeamEQuestions> {
                         color: KcontainerColor,
                         borderRadius: BorderRadius.all(Radius.circular(30.0)),
                       ),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          SingleChildScrollView(
-                            child: Padding(
+                      child: SingleChildScrollView(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Padding(
                               padding: kPadding,
-                              child: Text(questionbank[questionNo].riddle1,
-                                  style: kRiddleText),
+                              child: Center(
+                                child: Text(questionbank[questionNo].riddle1,
+                                    style: kRiddleText),
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ),

@@ -32,7 +32,7 @@ class _TeamBQuestionsState extends State<TeamBQuestions> {
         R1: 'The center of the learning place Which makes you think it has branches of wisdom and leaves of peace?  Find me, I might be somewhere near you ',
         R2: 'Two in a corner, 1 in a room, 0 in a house, but 1 in a shelter. What am I?',
         R3: 'A sum of Rs.1890 has to be used to give 9 prizes to the customers of a super market for their overall academic purchases. If each prize is Rs.30 less than its preceding price, what is the least value of the price ?',
-        A: '8890'),
+        A: '8290'),
     QuestionStruct(
         l: 'LEVEL 3',
         R1: 'I am a circle surrounded by technology and nature where students gather for hangout and refreshment and your project discussion is incomplete without me.Let\'s see if you can find me.',
@@ -44,7 +44,7 @@ class _TeamBQuestionsState extends State<TeamBQuestions> {
         R1: 'I am center of wce and a event is incomplete without having a pic with me. Find me with your whole team.',
         R2: '',
         R3: '',
-        A: 'Alohomora')
+        A: 'ALOHOMORA')
   ];
 
   int questionNo = 0;
@@ -72,7 +72,7 @@ class _TeamBQuestionsState extends State<TeamBQuestions> {
     textInputAction: TextInputAction.none,
     decoration: const InputDecoration(
       contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-      hintText: "Find me",
+      hintText: "Enter Code ",
     ),
   );
 

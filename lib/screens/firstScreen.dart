@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:gdscquiz/screens/displayScreen.dart';
 import 'package:gdscquiz/screens/loginScreen.dart';
 
 import '../constants.dart';

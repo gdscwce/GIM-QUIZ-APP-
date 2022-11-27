@@ -39,13 +39,13 @@ class _TeamDQuestionsState extends State<TeamDQuestions> {
         R1: 'The place of study is where you have to be. You are here , we are here , now you may think you should go where? Just ask yourself a big WHY, find the foundation of that WHY.',
         R2: 'You’ll find me in Mercury, Earth, Mars and Jupiter, but not in Venus or Neptune. What am I?',
         R3: 'A sum of Rs.1890 has to be used to give 9 prizes to the students  for their overall academic purchases. If each prize is Rs.30 less than its preceding price, what is the least value of the price ?',
-        A: '8890'),
+        A: '8290'),
     QuestionStruct(
         l: 'LEVEL 4',
         R1: '',
         R2: 'Khula asman uper, hara maidan neche, Pana hai jawab, duniyake ke samne dundo janab? Milo mujse tum sare milke agar chahat hai jeet ki.',
         R3: '',
-        A: 'Alohomora ')
+        A: 'ALOHOMORA')
   ];
 
   int questionNo = 0;
@@ -73,7 +73,7 @@ class _TeamDQuestionsState extends State<TeamDQuestions> {
     textInputAction: TextInputAction.none,
     decoration: const InputDecoration(
       contentPadding: EdgeInsets.fromLTRB(20, 15, 20, 15),
-      hintText: "Find me",
+      hintText: "Enter Code ",
     ),
   );
 

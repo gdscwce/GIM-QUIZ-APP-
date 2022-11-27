@@ -1,5 +1,4 @@
 import 'dart:math';
-import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:confetti/confetti.dart';
 import 'package:gdscquiz/constants.dart';
